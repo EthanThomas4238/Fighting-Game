@@ -277,10 +277,8 @@ window.addEventListener('keydown',(event)=>{
       enemy.lastKey = 'ArrowLeft';
       break;
     case 'ArrowUp':
-      console.log("tried to jump");
       if (enemy.grounded || enemy.numJumps < 2) {
         keys.ArrowUp.pressed = true;
-        console.log("Should have jumped");
       }
       break;
   }
